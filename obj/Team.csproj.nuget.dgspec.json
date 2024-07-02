@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AnnikaStanko\\Projekte\\Team\\Team.csproj": {}
+    "C:\\Users\\AnnikaStanko\\Projekte\\Old\\Team\\Team.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AnnikaStanko\\Projekte\\Team\\Team.csproj": {
+    "C:\\Users\\AnnikaStanko\\Projekte\\Old\\Team\\Team.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AnnikaStanko\\Projekte\\Team\\Team.csproj",
+        "projectUniqueName": "C:\\Users\\AnnikaStanko\\Projekte\\Old\\Team\\Team.csproj",
         "projectName": "Team",
-        "projectPath": "C:\\Users\\AnnikaStanko\\Projekte\\Team\\Team.csproj",
+        "projectPath": "C:\\Users\\AnnikaStanko\\Projekte\\Old\\Team\\Team.csproj",
         "packagesPath": "C:\\Users\\AnnikaStanko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AnnikaStanko\\Projekte\\Team\\obj\\",
+        "outputPath": "C:\\Users\\AnnikaStanko\\Projekte\\Old\\Team\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\AnnikaStanko\\AppData\\Roaming\\NuGet\\NuGet.Config"
