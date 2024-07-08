@@ -20,7 +20,7 @@ while (true)
     Console.WriteLine("1: Team erstellen");
     Console.WriteLine("2: Namen hinzufügen");
     Console.WriteLine("3. Alle Namen eines Teams anzeigen");
-    Console.WriteLine("4. Update den Namen des Teams");
+    Console.WriteLine("4. Verändere den Namen des Teams");
     Console.WriteLine("5. Löschen eines Teams");
     Console.WriteLine("6. Beenden");
     string? option = Console.ReadLine();
@@ -79,7 +79,7 @@ while (true)
         }
         case "4":
         {
-            Console.Write("Gib die ID des Teams ein, welches geupdated werden soll: ");
+            Console.Write("Gib die ID des Teams ein, welches verändert werden soll: ");
             int teamId = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Wie soll das Team heißen?: ");
