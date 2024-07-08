@@ -98,9 +98,32 @@ while (true)
         {
             Console.Write("Gib die ID des Teams ein, welches gelöscht werden soll: ");
             int teamId = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine("Möchtest du das Team wirklich löschen? J/N");
+            var result = Console.ReadKey();
+
+            switch (result.Key)
+            {
+                case ConsoleKey.J:
+                {
+                    break;
+                }
+
+                case ConsoleKey.N:
+                {
+                    return;
+                }
+                default:
+                {
+                    Console.WriteLine("Ungültige Eingabe.");
+                    return;
+                }
+            }
 
             teamManager.DeleteTeam(teamId);
-            break;
+
+                    break;
+            
         }
         
         case "6":

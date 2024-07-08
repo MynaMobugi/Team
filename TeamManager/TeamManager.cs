@@ -63,9 +63,9 @@ namespace Team
                 Console.Write("Die ID 0 ist nicht vergeben. Bitte um erneute Eingabe: ");
                 return null;
             }
-            
+
             var team = FindTeam(teamId);
-            
+
             return team;
         }
 
@@ -76,15 +76,15 @@ namespace Team
                 Console.WriteLine("Der Team Name muss mindestens 3 Buchstaben haben.");
                 return false;
             }
-            
+
             if (teams.Count == 0)
             {
                 Console.WriteLine("Keine Teams vorhanden, bitte zuerst ein Team erstellen.");
                 return false;
             }
-            
+
             var team = FindTeam(updatedTeamId);
-            
+
             if (team == null)
             {
                 return false;
@@ -111,35 +111,18 @@ namespace Team
                 return false;
             }
 
-            Console.WriteLine("Möchtest du das Team wirklich löschen? J/N");
-            var result = Console.ReadKey();
-
-            switch (result.Key)
-            {
-                case ConsoleKey.J:
-                {
-                    break;
-                }
-
-                case ConsoleKey.N:
-                {
-                    return false;
-                }
-                default: 
-                {
-                    Console.WriteLine("Ungültige Eingabe.");
-                    return false;
-                }
-            }
             teams.Remove(team);
             Console.WriteLine($"Team mit der ID {teamId} wurde erfolgreich gelöscht.");
             return true;
         }
-        
+
         private Team? FindTeam(int teamId)
         {
             Team? team = teams.Find(t => t.Id == teamId);
             return team;
         }
+
     }
 }
+
+

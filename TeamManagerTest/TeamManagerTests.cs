@@ -1,3 +1,4 @@
+using System.Dynamic;
 using Team;
 
 namespace TeamManagerTest;
@@ -89,8 +90,21 @@ public class Tests
     }
 
     [Test]
-    public void CheckIfTeamListIsEmpty()
+    public void CheckIfTeamListIsEmptyAfterDeletingTeam()
     {
+        int id = 3;
+
+        var success = TeamManager.CreateTeam(id, "Affe");
+        Assert.That(success, Is.Not.Null);
+
+        var team = TeamManager.GetTeam(id);
+        Assert.That(team, Is.Not.Null);
+
+        var deletedTeam = TeamManager.DeleteTeam(id);
+        Assert.That(deletedTeam, Is.Not.False);
+
+        var test = TeamManager.GetTeam(id);
+        Assert.That(test, Is.Null);
     }
 
     [Test]
